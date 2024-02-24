@@ -1,0 +1,12 @@
+<div class="footer wrapper">
+	<nav class="nav">
+		<div>{{ with .Site.Copyright }} {{ . }} | {{ end }} Licensed Under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0</a></div>
+	</nav>
+</div>
+
+{{- with .Site.Params.Social -}}
+{{- end -}}
+
+<script>
+	mediumZoom(document.querySelectorAll('div.imageblock > div.content > img'))
+</script>
